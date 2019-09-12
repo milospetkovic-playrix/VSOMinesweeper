@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<asset assetType="sceneObject">
+	<!--vso: 22-->
+	<root name="root">
+		<uid entityId="2502975675" />
+		<transform>
+			<scale x="1.3" y="1.3" z="1.0" />
+		</transform>
+		<sorting type="priority">
+			<ptr>
+				<uid entityId="2641883932" />
+			</ptr>
+		</sorting>
+		<component type="sprite">
+			<ptr>
+				<uid entityId="92954873" />
+				<material />
+				<spriteOrTexture id="Default" />
+			</ptr>
+		</component>
+		<behaviours type="input">
+			<ptr>
+				<uid entityId="2150796786" />
+			</ptr>
+		</behaviours>
+		<behaviours type="mineField">
+			<ptr>
+				<uid entityId="4245352908" />
+				<sprite>
+					<path>
+						<ids _v_="92954873" />
+					</path>
+				</sprite>
+			</ptr>
+		</behaviours>
+		<behaviours type="signalSubscription">
+			<ptr>
+				<uid entityId="1039564170" />
+				<subscriptions type="signalSubscriptionBehaviour::Subscription">
+					<ptr signalName="click" signalType="DoubleTap">
+						<callback type="behaviourFunctionCallback">
+							<ptr methodName="FlagField">
+								<behaviour>
+									<path>
+										<ids _v_="4245352908" />
+									</path>
+								</behaviour>
+							</ptr>
+						</callback>
+						<signalsProvider>
+							<path>
+								<ids _v_="754431566" />
+							</path>
+						</signalsProvider>
+					</ptr>
+				</subscriptions>
+				<subscriptions type="signalSubscriptionBehaviour::Subscription">
+					<ptr signalName="click" signalType="LongPress">
+						<callback type="behaviourFunctionCallback">
+							<ptr methodName="OpenAround">
+								<behaviour>
+									<path>
+										<ids _v_="4245352908" />
+									</path>
+								</behaviour>
+							</ptr>
+						</callback>
+						<signalsProvider>
+							<path>
+								<ids _v_="754431566" />
+							</path>
+						</signalsProvider>
+					</ptr>
+				</subscriptions>
+				<subscriptions type="signalSubscriptionBehaviour::Subscription">
+					<ptr signalName="click" signalType="Tap">
+						<callback type="behaviourFunctionCallback">
+							<ptr methodName="OpenField">
+								<behaviour>
+									<path>
+										<ids _v_="4245352908" />
+									</path>
+								</behaviour>
+							</ptr>
+						</callback>
+						<signalsProvider>
+							<path>
+								<ids _v_="754431566" />
+							</path>
+						</signalsProvider>
+					</ptr>
+				</subscriptions>
+			</ptr>
+		</behaviours>
+		<children name="Button">
+			<uid entityId="3098401028" />
+			<transform>
+				<scale x="0.15" y="0.15" z="1.0" />
+			</transform>
+			<component type="image9Slice">
+				<ptr fitPolicy="Stretch" xSliceLeft="0.15" xSliceRight="0.85" ySliceLeft="0.15" ySliceRight="0.85">
+					<uid entityId="4116970322" />
+					<material />
+					<color red="255" green="255" blue="255" alpha="0" />
+					<texture id="white_round_rect" />
+				</ptr>
+			</component>
+			<behaviours type="anchoredElement">
+				<ptr>
+					<uid entityId="1952543176" />
+					<verticalAnchor nrp_1="0.5" offset_2="100.0" />
+					<horizontalAnchor nrp_1="0.5" offset_2="100.0" />
+				</ptr>
+			</behaviours>
+			<behaviours type="button">
+				<ptr>
+					<uid entityId="754431566" />
+				</ptr>
+			</behaviours>
+		</children>
+	</root>
+</asset>

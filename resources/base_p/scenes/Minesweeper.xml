@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<objects>
+	<!--vso: 2-->
+	<settings type="vsoupSceneSettings">
+		<ptr />
+	</settings>
+	<object id="MinesweeperController">
+		<transform>
+			<position x="512.0" y="384.0" z="-0.5" />
+		</transform>
+	</object>
+</objects>

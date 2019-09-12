@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<Resources>
+	<Sprites basePath="textures/" group="TestGroup">
+		<sprite id="circle" path="circle"/>
+	</Sprites>
+
+	<Textures basePath="textures/" group="CoinSheet">
+		<texture id="coinstrip" path="coinstrip.png"/>
+	</Textures>
+
+	<Textures basePath="textures/" group="TestGroup">
+		<texture id="vso_alphabet_glow" path="vso_alphabet_glow.png"/>
+	</Textures>
+
+	<Sprites basePath="textures/minesweeper" group="TestGroup">
+		<sprite id="Default" path="Default.png" />
+		<sprite id="Empty0" path="Empty0.png" />
+		<sprite id="Empty1" path="Empty1.png" />
+		<sprite id="Empty2" path="Empty2.png" />
+		<sprite id="Empty3" path="Empty3.png" />
+		<sprite id="Empty4" path="Empty4.png" />
+		<sprite id="Empty5" path="Empty5.png" />
+		<sprite id="Empty6" path="Empty6.png" />
+		<sprite id="Empty7" path="Empty7.png" />
+		<sprite id="Empty8" path="Empty8.png" />
+		<sprite id="Mine" path="Mine.png" />
+		<sprite id="Flag" path="Flag.png" />
+	</Sprites>
+
+	<Sprites basePath="textures/M3Chips" group="TestGroup">
+		<sprite id="M3Chip1" path="Chip1.png" prescale="0.5" />
+		<sprite id="M3Chip2" path="Chip2.png" prescale="0.5" />
+		<sprite id="M3Chip3" path="Chip3.png" prescale="0.5" />
+		<sprite id="M3Chip4" path="Chip4.png" prescale="0.5" />
+		<sprite id="M3Chip5" path="Chip5.png" prescale="0.5" />
+		<sprite id="M3Chip6" path="Chip6.png" prescale="0.5" />
+		<sprite id="M3Chameleon" path="Chameleon.png"/>
+	</Sprites>
+
+	<Textures basePath="textures/M3Chips" group="TestGroup">
+		<texture id="rainbow_cycle_gradient" path="rainbow_cycle_gradient.png"/>
+	</Textures>
+
+	<Textures group="TestGroup">
+		<texture id="Background2" path="textures/background1" />
+	</Textures>
+
+	<Sprites basePath="textures/samples/clock" group="TestGroup">
+		<sprite id="clockBody" path="clock.png" prescale="0.5" />
+		<sprite id="clockLongArrow" path="clock_arrow_long.png" prescale="0.5" />
+		<sprite id="clockShortArrow" path="clock_arrow_short.png" prescale="0.5" />
+	</Sprites>
+
+	<Sprites basePath="textures/samples/gsback" group="TestGroup">
+		<sprite id="gsb_branch" path="branch_01.png" prescale="0.5" />
+		<sprite id="gsb_leaves" path="leaves_01.png" />
+		<sprite id="gsb_particle" path="particle.png" prescale="0.25" />
+		<sprite id="gsb_sunray" path="sunray.png" />
+	</Sprites>
+
+	<Textures basePath="textures/samples/gsback" group="TestGroup">
+		<texture id="gsb_light_mask" path="light_mask.png" />
+		<texture id="gsb_noise_01" path="noise_01.png" />
+		<texture id="gsb_noise_02" path="noise_02.png" />
+		<texture id="gsb_noise_03" path="noise_03.png" addressMode="REPEAT" />
+		<texture id="gsb_ipad_back01" path="ipad_03.png" />
+		<texture id="gsb_ipad_back02" path="ipad_04.png" />
+		<texture id="gsb_ipad_back03" path="ipad_05.png" />
+		<texture id="gsb_ipad_back04" path="ipad_06.png" />
+		<texture id="gsb_vignette" path="vignette.png" />
+	</Textures>
+
+	<Textures basePath="textures/samples" group="Samples">
+		<texture id="MetalDecal" path="MetalDecal.png" addressMode="REPEAT" />
+	</Textures>
+
+	<Textures basePath="textures/hs" group="TestGroup">
+		<texture id="ava_disabled_catherine" path="asn_ava_disabled_catherine.png" />
+		<texture id="ava_catherine" path="asn_ava_catherine.png" />
+		<texture id="ava_mrsbroom" path="asn_ava_mrsbroom.png" />
+	</Textures>
+
+	<Sprites basePath="textures/hs" group="TestGroup">
+		<sprite id="HsJarOrange" path="object_garage_jar_orange.png" />
+		<sprite id="HsJarPirple" path="object_garage_jar_purple.png" />
+		<sprite id="HsJarYellow" path="object_garage_jar_yellow.png" />
+		<sprite id="HsSaleTable" path="object_garage_TableSalling.png" />
+		<sprite id="HsDish" path="dish.png" />
+	</Sprites>
+
+	<Textures basePath="textures/zoo" group="TestGroup">
+		<texture id="zooBench" path="bench.png" />
+		<texture id="zooIsland" path="island_2.png" />
+		<texture id="zooIsland2" path="island_3.png" />
+		<texture id="elephants" path="elephants.png" />
+		<texture id="frolic_elephant" path="frolic_elephant.png" />
+	</Textures>
+
+	<Textures basePath="textures/gui" group="TestGroup">
+		<texture id="BTN_Big_B" path="BTN_Big_B.png" />
+		<texture id="ProgressBar" path="ProgressBar.png" />
+		<texture id="BTN_Big_B_Pressed" path="BTN_Big_B_Pressed.png"/>
+		<texture id="BTN_Big_B_shadow" path="BTN_Big_B_shadow.png"/>
+		<texture id="highlight" path="highlight.png"/>
+	</Textures>
+
+	<Textures basePath="textures/gui/TrimTest" group="TestGroup" alphaLimit="80">
+		<texture id="buttonTrimSingle" path="buttonTrimSingle.png" />
+	</Textures>
+
+	<Textures group="stich" basePath="textures/UI/stichPanel">
+	  <texture id="stichPanel" path="Panel.png"/>
+	  <texture id="stichHor" path="Stich_h.png"/>
+	  <texture id="stichVert" path="Stich_v.png"/>
+  </Textures>
+		
+	<!-- From Atlas -->
+	<Sprites basePath="textures/hs/atlas" group="TestGroup" prescale="0.5">
+		<sprite id="HsCarpet" path="Carpet.png" />
+		<sprite id="HsChip1" path="hsChip1.png" />
+		<sprite id="HsChip2" path="hsChip2.png" />
+		<sprite id="HsChip3" path="hsChip3.png" />
+		<sprite id="HsChip4" path="hsChip4.png" />
+		<sprite id="HsChip5" path="hsChip5.png" />
+		<sprite id="HsChip6" path="hsChip6.png" />
+		<sprite id="HsIce1" path="Ice1.png" />
+		<sprite id="HsIce2" path="Ice2.png" />
+		<sprite id="HsOilCan2" path="OilCan2.png" />
+		<sprite id="HsWater1" path="shore_water_1.png" />
+		<sprite id="HsWater2" path="shore_water_2.png" />
+		<sprite id="HsWater3" path="shore_water_3.png" />
+		<sprite id="HsWater4" path="shore_water_4.png" />
+		<sprite id="HsWaterInBottom" path="shore_water_inside_bottom.png" />
+		<sprite id="HsWaterInLeft" path="shore_water_inside_left.png" />
+		<sprite id="HsWaterInRight" path="shore_water_inside_right.png" />
+		<sprite id="HsWaterInTop" path="shore_water_inside_top.png" />
+		<sprite id="HsWaterOutB" path="shore_water_outside_b.png" />
+		<sprite id="HsWaterOutL" path="shore_water_outside_l.png" />
+		<sprite id="HsWaterOutLN_1" path="shore_water_outside_lb_1.png" />
+		<sprite id="HsWaterOutLN_2" path="shore_water_outside_lb_2.png" />
+		<sprite id="HsWaterOutLN_3" path="shore_water_outside_lb_3.png" />
+		<sprite id="HsWaterOutLT_1" path="shore_water_outside_lt_1.png" />
+		<sprite id="HsWaterOutLT_2" path="shore_water_outside_lt_2.png" />
+		<sprite id="HsWaterOutLT_3" path="shore_water_outside_lt_3.png" />
+		<sprite id="HsWaterOutR" path="shore_water_outside_r.png" />
+		<sprite id="HsWaterOutRB_1" path="shore_water_outside_rb_1.png" />
+		<sprite id="HsWaterOutRB_2" path="shore_water_outside_rb_2.png" />
+		<sprite id="HsWaterOutRB_3" path="shore_water_outside_rb_3.png" />
+		<sprite id="HsWaterOutRT_1" path="shore_water_outside_rt_1.png" />
+		<sprite id="HsWaterOutRT_2" path="shore_water_outside_rt_2.png" />
+		<sprite id="HsWaterOutRT_3" path="shore_water_outside_rt_3.png" />
+		<sprite id="HsWaterOutT" path="shore_water_outside_t.png" />
+	</Sprites>
+
+	<Textures basePath="textures/hs/atlas" group="TestGroup" prescale="0.5">
+		<texture id="NormalMap" path="normalmap.png" />
+	</Textures>
+
+	<Textures basePath="textures/test" group="TestGroup">
+		<texture id="buttonTrim" path="buttonTrim.png"/>
+	</Textures>
+
+	<Sprites basePath="textures/zoo/atlas" group="TestGroup" prescale="0.5">
+		<sprite id="beauty_amber_tree" path="amber_tree.png" />
+		<sprite id="beauty_balloon_panda" path="balloon_panda.png" />
+		<sprite id="beauty_balloon_panda_shadow" path="balloon_panda_shadow.png" />
+		<sprite id="beauty_balloon_stick" path="balloon_stick.png" />
+		<sprite id="beauty_balloon_tiger" path="balloon_tiger.png" />
+		<sprite id="beauty_bench_of_harmony" path="bench_of_harmony.png" />
+		<sprite id="beauty_decorative_bamboo" path="decorative_bamboo.png" />
+		<sprite id="beauty_bengal_tiger" path="bengal_tiger.png" />
+		<sprite id="beauty_bronze_oak" path="bronze_oak.png" />
+		<sprite id="beauty_cocktail_bar" path="cocktail_bar.png" />
+		<sprite id="beauty_duck_pond" path="duck_pond.png" />
+		<sprite id="beauty_frolic_elephant" path="frolic_elephant.png" />
+		<sprite id="beauty_garden_of_stones" path="garden_of_stones.png" />
+		<sprite id="beauty_hill_tiger" path="hill_tiger.png" />
+		<sprite id="beauty_panda_town" path="panda_town.png" />
+		<sprite id="beauty_panoramic_terrace" path="panoramic_terrace.png" />
+		<sprite id="beauty_pond_with_lilies" path="pond_with_lilies.png" />
+		<sprite id="beauty_shop_of_balloons" path="shop_of_balloons.png" />
+		<sprite id="beauty_swing_elephants" path="swing_elephants.png" />
+		<sprite id="beauty_swing_turtle" path="swing_turtle.png" />
+		<sprite id="beauty_teahouse" path="teahouse.png" />
+		<sprite id="beauty_tea_house" path="tea_house.png" />
+		<sprite id="beauty_thickets_of_bamboo" path="thickets_of_bamboo.png" />
+		<sprite id="beauty_wisdom_park" path="wisdom_park.png" />
+		<sprite id="beauty_wooden_pagoda" path="wooden_pagoda.png" />
+		<sprite id="fountain_square" path="fountain_square.png" />
+		<sprite id="beauty_cascade_tree" path="cascade_tree.png" />
+		<sprite id="beauty_cherry_tree" path="cherry_tree.png" />
+		<sprite id="beauty_willow" path="willow.png" />
+		<sprite id="beauty_bush_1" path="bush_1.png" />
+		<sprite id="beauty_bush_pink" path="bush_pink.png" />
+		<sprite id="beauty_tree_4" path="tree_4.png" />
+		<sprite id="beauty_tulips" path="tulips.png" />
+	</Sprites>
+	
+	<Sprites group="zooPacked" prescale="0.5">
+		<sprite id="beauty2_amber_tree" path="xxx.png" />
+		<sprite id="beauty2_bad_hill_tiger" path="xxx.png" />
+		<sprite id="beauty2_bad_swing_elephants" path="xxx.png" />
+		<sprite id="beauty2_bench_2" path="xxx.png" />
+		<sprite id="beauty2_cascade_tree" path="xxx.png" />
+		<sprite id="beauty2_china_banner" path="xxx.png" />
+		<sprite id="beauty2_china_benches" path="xxx.png" />
+		<sprite id="beauty2_china_benches_double" path="xxx.png" />
+		<sprite id="beauty2_decorative_bamboo" path="xxx.png" />
+		<sprite id="beauty2_frolic_elephant" path="xxx.png" />
+		<sprite id="beauty2_kite_peacock" path="xxx.png" />
+		<sprite id="beauty2_panoramic_terrace" path="xxx.png" />
+		<sprite id="beauty2_saffron_bush" path="xxx.png" />
+		<sprite id="icon_shop_of_balloons_cut2" path="xxx.png" />
+		<sprite id="beauty2_swing_elephants" path="xxx.png" />
+		<sprite id="beauty2_thickets_of_bamboo" path="xxx.png" />
+		<sprite id="beauty2_tree_1" path="xxx.png" />
+		<sprite id="beauty2_tree_2" path="xxx.png" />
+		<sprite id="beauty2_tree_7" path="xxx.png" />
+		<sprite id="beauty2_willow" path="xxx.png" />
+		<sprite id="beauty2_zoo_caffe" path="xxx.png" />
+		<sprite id="beauty2_zoo_caffe_short" path="xxx.png" />
+		<sprite id="beauty2_adenium" path="xxx.png" />
+		<sprite id="beauty2_aloe_red" path="xxx.png" />
+		<sprite id="beauty2_baobab" path="xxx.png" />
+		<sprite id="beauty2_commifora" path="xxx.png" />
+		<sprite id="beauty2_cotton_candy" path="xxx.png" />
+		<sprite id="beauty2_drums" path="xxx.png" />
+		<sprite id="beauty2_gigantic_tusks" path="xxx.png" />
+		<sprite id="beauty2_ring_ring_rhino" path="xxx.png" />
+		<sprite id="beauty2_round_terrace" path="xxx.png" />
+		<sprite id="beauty2_savanna_double_bench" path="xxx.png" />
+		<sprite id="beauty2_shop_masks" path="xxx.png" />
+		<sprite id="beauty2_sicklebush" path="xxx.png" />
+		<sprite id="beauty2_statue_giraffe" path="xxx.png" />
+		<sprite id="beauty2_statue_rhino" path="xxx.png" />
+		<sprite id="beauty2_yucca_bush" path="xxx.png" />
+		<sprite id="beauty2_yucca_tree" path="xxx.png" />
+		<sprite id="beauty2_aspen" path="xxx.png" />
+		<sprite id="beauty2_balsam_fir" path="xxx.png" />
+		<sprite id="beauty2_dahurian_larch" path="xxx.png" />
+		<sprite id="beauty2_ice_bear" path="xxx.png" />
+		<sprite id="beauty2_ice_walrus" path="xxx.png" />
+		<sprite id="beauty2_megalith" path="xxx.png" />
+		<sprite id="beauty2_observ_deck" path="xxx.png" />
+		<sprite id="beauty2_siberian_spruce" path="xxx.png" />
+		<sprite id="beauty2_well" path="xxx.png" />
+		<sprite id="beauty2_wild_rosemary" path="xxx.png" />
+		<sprite id="beauty2_great_fir" path="xxx.png" />
+		<sprite id="beauty2_great_totem" path="xxx.png" />
+		<sprite id="beauty2_hazel" path="xxx.png" />
+		<sprite id="beauty2_idaho_bench_double" path="xxx.png" />
+		<sprite id="beauty2_idaho_bench_single" path="xxx.png" />
+		<sprite id="beauty2_idaho_fountain" path="xxx.png" />
+		<sprite id="beauty2_idaho_picnic" path="xxx.png" />
+		<sprite id="beauty2_idaho_pointer" path="xxx.png" />
+		<sprite id="beauty2_maple" path="xxx.png" />
+		<sprite id="beauty2_statue_elk" path="xxx.png" />
+		<sprite id="beauty2_statue_grizzly" path="xxx.png" />
+		<sprite id="beauty2_thuja" path="xxx.png" />
+		<sprite id="beauty2_tsuga" path="xxx.png" />
+		<sprite id="beauty2_velo_parking" path="xxx.png" />
+		<sprite id="beauty2_aztec_ring" path="xxx.png" />
+		<sprite id="beauty2_brazil_nut" path="xxx.png" />
+		<sprite id="beauty2_cocoa_tree" path="xxx.png" />
+		<sprite id="beauty2_heliconia" path="xxx.png" />
+		<sprite id="beauty2_mayan_calendar" path="xxx.png" />
+		<sprite id="beauty2_orchid" path="xxx.png" />
+		<sprite id="beauty2_stone_throne" path="xxx.png" />
+		<sprite id="beauty2_walking_palm" path="xxx.png" />
+		<sprite id="hedge2_r_corner" path="xxx.png" />
+		<sprite id="hedge2_lb_cross_t" path="xxx.png" />
+		<sprite id="china2_bush_1" path="xxx.png" />
+		<sprite id="china2_rock_7" path="xxx.png" />
+		<sprite id="china2_rock_8" path="xxx.png" />
+		<sprite id="china2_rock_9" path="xxx.png" />
+		<sprite id="china2_tree_2" path="xxx.png" />
+		<sprite id="china2_tree_4" path="xxx.png" />
+		<sprite id="sv2_gate_1" path="xxx.png" />
+		<sprite id="sv2_gate_3" path="xxx.png" />
+		<sprite id="road2_ext_r_right_cr" path="xxx.png" />
+		<sprite id="road2_ext_r_top_cr" path="xxx.png" />
+		<sprite id="road2_tile_savanna_bottom" path="xxx.png" />
+		<sprite id="china2_trash_bamboo_1" path="xxx.png" />
+		<sprite id="china2_trash_bamboo_2" path="xxx.png" />
+		<sprite id="china2_trash_bush_1" path="xxx.png" />
+		<sprite id="china2_trash_cracks_1_unlockTerritory" path="xxx.png" />
+		<sprite id="china2_trash_cracks_2_unlockTerritory" path="xxx.png" />
+		<sprite id="china2_trash_cracks_unlockTerritory" path="xxx.png" />
+		<sprite id="zoo2_landscape_expand_herb_5" path="xxx.png" />
+		<sprite id="savana2_acacia_1" path="xxx.png" />
+		<sprite id="savana2_baobab_2" path="xxx.png" />
+		<sprite id="savanna2_gr_grass_top_2" path="xxx.png" />
+		<sprite id="savana2_s_grass_01" path="xxx.png" />
+		<sprite id="savana2_s_rock_01" path="xxx.png" />
+		<sprite id="savana2_s_rock_02" path="xxx.png" />
+		<sprite id="savana2_s_rock_04" path="xxx.png" />
+		<sprite id="savana2_s_rock_05" path="xxx.png" />
+		<sprite id="savana2_s_rock_08" path="xxx.png" />
+		<sprite id="savana2_s_rock_09" path="xxx.png" />
+		<sprite id="savanna2_wall_top_01" path="xxx.png" />
+		<sprite id="savana2_t_rock_01" path="xxx.png" />
+		<sprite id="savana2_t_rock_04" path="xxx.png" />
+		<sprite id="savana2_t_rock_05" path="xxx.png" />
+		<sprite id="savana2_t_rock_06" path="xxx.png" />
+		<sprite id="savana2_t_rock_07" path="xxx.png" />
+		<sprite id="sv2_tree" path="xxx.png" />
+		<sprite id="savannah2_road_ext_r_left_cr" path="xxx.png" />
+		<sprite id="savannah2_road_ext_r_right_cr" path="xxx.png" />
+		<sprite id="savanna2_trash_acacia_3" path="xxx.png" />
+		<sprite id="savanna2_trash_cracks_big" path="xxx.png" />
+		<sprite id="savanna2_trash_expand_herb_5" path="xxx.png" />
+		<sprite id="arctic2_4v" path="xxx.png" />
+		<sprite id="tundra2_border_ground_2" path="xxx.png" />
+		<sprite id="arctic2_ext_r_bot_cr" path="xxx.png" />
+		<sprite id="arctic2_ext_r_left_cr" path="xxx.png" />
+		<sprite id="arctic2_ext_r_right_cr" path="xxx.png" />
+		<sprite id="arctic2_trash_hummocks_1" path="xxx.png" />
+		<sprite id="arctic2_trash_hummocks_3" path="xxx.png" />
+		<sprite id="arctic2_trash_juniper_tree" path="xxx.png" />
+		<sprite id="arctic2_trash_snow_cannon_2" path="xxx.png" />
+		<sprite id="arctic2_trash_tundra_moss_2" path="xxx.png" />
+		<sprite id="arctic2_trash_tundra_stone_3" path="xxx.png" />
+		<sprite id="Idaho2_r22" path="xxx.png" />
+		<sprite id="Idaho2_r4" path="xxx.png" />
+		<sprite id="idaho2_gate_3" path="xxx.png" />
+		<sprite id="Idaho2_bush_5" path="xxx.png" />
+		<sprite id="Idaho2_fir-tree_6" path="xxx.png" />
+		<sprite id="Idaho2_grass_1" path="xxx.png" />
+		<sprite id="Idaho2_tree_1" path="xxx.png" />
+		<sprite id="Idaho2_tree_3" path="xxx.png" />
+		<sprite id="expand2_grass_4" path="xxx.png" />
+		<sprite id="falls2_grass" path="xxx.png" />
+		<sprite id="test2_gr" path="xxx.png" />
+		<sprite id="zoo2_landscape_entrance_bus_stop" path="xxx.png" />
+		<sprite id="zoo2_landscape_entrance_block" path="xxx.png" />
+		<sprite id="zoo2_landscape_entrance_gate_left_bottom" path="xxx.png" />
+		<sprite id="zoo2_landscape_entrance_gate_left_top" path="xxx.png" />
+		<sprite id="zoo2_landscape_entrance_monument" path="xxx.png" />
+		<sprite id="zoo2_landscape_entrance_fence_top" path="xxx.png" />
+		<sprite id="china2_3_crowns_tile" path="xxx.png" />
+		<sprite id="china2_3_palms" path="xxx.png" />
+		<sprite id="china2_liana_crown" path="xxx.png" />
+		<sprite id="lock2_gate_areal_broken_bridge" path="xxx.png" />
+		<sprite id="china2_middle_crown" path="xxx.png" />
+		<sprite id="road2_rt_land_povorot" path="xxx.png" />
+		<sprite id="china2_tunnel_01" path="xxx.png" />
+	</Sprites>
+	
+	<Sprites group="coin" prescale="1.0">
+		<sprite id="coin_a_00101" path="xxx.xxx" />
+		<sprite id="coin_a_00102" path="xxx.xxx" />
+		<sprite id="coin_a_00103" path="xxx.xxx" />
+		<sprite id="coin_a_00104" path="xxx.xxx" />
+		<sprite id="coin_a_00105" path="xxx.xxx" />
+		<sprite id="coin_a_00106" path="xxx.xxx" />
+		<sprite id="coin_a_00107" path="xxx.xxx" />
+		<sprite id="coin_a_00108" path="xxx.xxx" />
+		<sprite id="coin_a_00109" path="xxx.xxx" />
+		<sprite id="coin_a_00110" path="xxx.xxx" />
+		<sprite id="coin_a_00111" path="xxx.xxx" />
+		<sprite id="coin_a_00112" path="xxx.xxx" />
+		<sprite id="coin_a_00113" path="xxx.xxx" />
+		<sprite id="coin_a_00114" path="xxx.xxx" />
+		<sprite id="coin_a_00115" path="xxx.xxx" />
+		<sprite id="coin_a_00116" path="xxx.xxx" />
+		<sprite id="coin_a_00117" path="xxx.xxx" />
+		<sprite id="coin_a_00118" path="xxx.xxx" />
+		<sprite id="coin_a_00119" path="xxx.xxx" />
+		<sprite id="coin_a_00120" path="xxx.xxx" />
+	</Sprites>
+
+	<Sprites group="TestGroup">
+		<sprite id="whitebox" path="textures/whitebox.png" />
+	</Sprites>
+
+	<Textures group="TestGroup">
+		<texture id="lionfish_01" path="textures/models/lionfish_01_1024x1024" />
+		<texture id="zak_01_tex.png" path="models/zak/zak_01_tex.png" />
+		<texture id="mom.png" path="models/mom.png" />
+		<texture id="ostin_butler_suit.png" path="models/ostin_butler_suit.png" />
+		<texture id="rope" path="textures/rope.png" />
+		<texture id="zoomania" path="textures/zoomania.png" />
+		<texture id="colortex" path="textures/colortex.png" />
+		<texture id="white_circle" path="textures/white_circle.png" />
+		<texture id="remove_chip_part_juice" path="textures/M3Effects/RemovingChips/remove_chip_part_juice.png"/>
+		<texture id="spotlight" path="textures/spotlight.png"/>
+		<texture id="white_round_rect" path="textures/white_round_rect.png" />
+	</Textures>
+
+	<Textures group="TestM3Effects">
+		<texture id="textures/M3Effects/drop_spark" path="textures/M3Effects/drop_spark.png"/>
+		<texture id="textures/M3Effects/rays_glow_blurred" path="textures/M3Effects/rays_glow_blurred.png"/>
+	</Textures>
+
+	<Textures group="gui" basePath="textures/UI/Constructor/Panels">
+		<texture id="PAN_Top2" path="PAN_Top2.png"/>
+		<texture id="PAN_Right2" path="PAN_Right2.png"/>
+		<texture id="PAN_Left2" path="PAN_Left2.png"/>
+		<texture id="PAN_leaf5" path="PAN_leaf5.png"/>
+		<texture id="PAN_leaf4" path="PAN_leaf4.png"/>
+		<texture id="PAN_leaf3" path="PAN_leaf3.png"/>
+		<texture id="PAN_leaf2" path="PAN_leaf2.png"/>
+		<texture id="PAN_leaf1" path="PAN_leaf1.png"/>
+		<texture id="PAN_Close_btn_bg" path="PAN_Close_btn_bg.png"/>
+		<texture id="PAN_Close_btn" path="PAN_Close_btn.png"/>
+		<texture id="PAN_Center2" path="PAN_Center2.png"/>
+		<texture id="PAN_Bottom2" path="PAN_Bottom2.png"/>
+		<texture id="CTR_PopUp_bg" path="CTR_PopUp_bg.png"/>
+		<texture id="CTR_Pattern_s" path="CTR_Pattern_s.png"/>
+		<texture id="Close_btn_pp" path="Close_btn_pp.png"/>
+	</Textures>
+
+	<Textures group="water" basePath="textures/water">
+		<texture id="water_normals" path="waterx_normals.png" addressMode="REPEAT"/>
+	</Textures>
+
+	<Geometries group="TestGroup">
+		<geometry2d id="tree_palm" path="geometry/tree_palm.png" geometry="geometry/tree_palm.xml" />
+		<geometry2d id="tree_palm_0" path="geometry/tree_palm.png" geometry="geometry/tree_palm_0.xml" />
+		<geometry2d id="ProgressBar" path="textures/gui/ProgressBar.png" geometry="geometry/progressbar.xml" />
+		<geometry2d id="BananaContour" path="textures/M3Chips/rainbow_cycle_gradient.png" geometry="geometry/banana_contour.xml" />
+		<geometry2d id="ribbon" path="textures/stripes.png" geometry="geometry/ribbon.xml" />
+		<geometry2d id="elephants_water" geometry="geometry/elephants_water.xml" />
+		<geometry2d id="elephants_waterfall" path="textures/water/waterfall.png" geometry="geometry/elephants_waterfall.xml" />
+	</Geometries>
+
+	<Textures group="">
+		<texture id="textures/politics/PChameleon" path="textures/politics/PChameleon.png"/>
+		<texture id="textures/politics/PCircle" path="textures/politics/PCircle.png"/>
+	</Textures>
+
+	<Textures group="ShadersVFX" basePath="textures/vfx/shaders">
+		<texture id="circle_gradient" path="circle_gradient.png"/>
+		<texture id="popcorn" path="popcorn.png"/>
+	</Textures>
+
+	<Shaders group="TestGroup">
+		<advancedShader id="default_advanced" vs="shaders/default_advanced" ps="shaders/default_advanced"/>
+		<advancedShader id="experimental" vs="shaders/experiment_advanced" ps="shaders/experiment_advanced"/>
+	</Shaders>
+	
+	<Shaders group="ShadersVFX">
+		<advancedShader id="vfx_hsl" vs="shaders/default" ps="shaders/HSL"/>
+		<advancedShader id="vfx_exposure" vs="shaders/default" ps="shaders/exposure"/>
+		<advancedShader id="vfx_erosion" vs="shaders/default" ps="shaders/erosion"/>
+		<advancedShader id="vfx_add_vertex_color" vs="shaders/default" ps="shaders/addVertexColor"/>
+	</Shaders>
+
+	<Shaders group="SpriteBatchGroup">
+		<shader id="highlight" vs="shaders/highlight" ps="shaders/highlight"/>
+	</Shaders>
+
+	<Shaders group="TestGroup">
+		<shader id="default" vs="shaders/default" ps="shaders/default"/>
+		<shader id="sepia" vs="shaders/default" ps="shaders/sepia"/>
+		<shader id="ripple_prog" vs="shaders/default" ps="shaders/ripple_prog"/>
+		<shader id="SkinningDefault" vs="shaders/SkinningDefault" ps="shaders/SkinningDefault"/>
+		<shader id="SkinningDecal" vs="shaders/SkinningDefault" ps="shaders/SkinningDecal"/>
+		<shader id="ripple" vs="shaders/default" ps="shaders/ripple"/>
+		<shader id="TestFloatConstants" vs="shaders/default" ps="shaders/testfloatconstants"/>
+		<shader id="TestFloatConstants2" vs="shaders/default" ps="shaders/testfloatconstants2"/>
+		<shader id="Distortion" vs="shaders/DefaultAuto2ndTexCoord" ps="shaders/DistortionBasic"/>
+		<shader id="DistortionAdditive" vs="shaders/DefaultAuto2ndTexCoord" ps="shaders/DistortionAdditive"/>
+		<shader id="DistortionTextureDecode" vs="shaders/default" ps="shaders/DistortionTextureDecode"/>
+		<shader id="TestAutoTexCoords" vs="shaders/AllAutoTexCoords.vsh" ps="shaders/AllAutoTexCoords.fsh"/>
+		<shader id="GardenBackgroundCompose" vs="shaders/default" ps="shaders/GardenBackgroundCompose"/>
+		<shader id="GardenBackgroundLight" vs="shaders/GardenBackgroundLight" ps="shaders/GardenBackgroundLight"/>
+		<shader id="GardenBackgroundMagicParticle" vs="shaders/GardenBackgroundLight" ps="shaders/GardenBackgroundMagicParticle"/>
+		<shader id="U3Slice" vs="shaders/default" ps="shaders/U3Slice"/>
+		<shader id="Trail" vs="shaders/trail" ps="shaders/trail"/>
+		<shader id="MovingHighlight" vs="shaders/MovingHighlight" ps="shaders/MovingHighlight"/>
+		<shader id="AdditiveHighlight" vs="shaders/SecondTextureByMatrix" ps="shaders/AdditiveHighlight"/>
+		<shader id="SecondTextureMask" vs="shaders/SecondTextureByMatrix" ps="shaders/SecondTextureMask"/>
+		<shader id="Water" vs="shaders/Waterx" ps="shaders/Waterx"/>
+		<shader id="UIDecalFullscreen" vs="shaders/UIDecalFullscreen" ps="shaders/UIDecal"/>
+		<shader id="UIDecalByMatrix" vs="shaders/SecondTextureByMatrix" ps="shaders/UIDecal"/>
+		<shader id="IntMul" vs="shaders/default" ps="shaders/intMul"/>
+		<shader id="ColorFromNormal" vs="shaders/ColorFromNormal" ps="shaders/ColorFromNormal"/>
+		<shader id="GrayscaleLerpAlpha" vs="shaders/default" ps="shaders/GrayscaleLerpAlpha"/>
+		<shader id="Spotlight" vs="shaders/default" ps="shaders/Spotlight"/>
+		<shader id="GlowingLetter" vs="shaders/GlowingLetter" ps="shaders/GlowingLetter"/>
+	</Shaders>
+
+	<Textures group="Test">
+        <texture id="stripes" path="textures/stripes.png"/>
+    </Textures>
+
+	<Textures group="SpineAnim">
+        <texture id="skeleton" path="SpineAnimations/Tree/skeleton.png"/>
+    </Textures>
+
+	<Textures group="SpineKnight">
+        <texture id="SpineKnightTex" path="SpineAnimations/Knight/Zone1_Knight.png"/>
+    </Textures>
+
+	<Textures group="SpineCamel">
+        <texture id="SpineCamelTex" path="SpineAnimations/Camel/Zone2_Camel.png"/>
+    </Textures>
+
+    <SpineAnimations group="Spine">
+        <animation id="SpineAnim" path="SpineAnimations/Tree/skeleton"/>
+        <animation id="SpineKnight" path="SpineAnimations/Knight/Zone1_Knight"/>
+        <animation id="SpineCamel" path="SpineAnimations/Camel/Zone2_Camel"/>
+    </SpineAnimations>
+
+	<ModelAnimations group="TestGroup">
+		<animation id="quad" path="models/quad.xml" />
+		<animation id="axes" path="models/axes.xml" />
+		<animation id="clownfish" path="models/clownfish.xml">
+			<rotation x="-0.8" y="-0.8" z="0.8"/>
+			<scaling x="8.0" y="8.0" z="8.0"/>
+		</animation>
+		<animation id="lionfish" path="models/lionfish.xml">
+			<rotation x="-0.8" y="-0.8" z="0.8"/>
+			<scaling x="5.0" y="5.0" z="5.0"/>
+		</animation>
+		<animation id="mom" path="models/mom.xml">
+		  <scaling x="5" y="5" z="5"/>
+		</animation>
+		<animation id="ostin_butler_suit" path="models/ostin_butler_suit.xml">
+		  <scaling x="5" y="5" z="5"/>
+		</animation>
+		<animation id="ostin_skeleton" path="models/ostin_skeleton.xml"/>
+		<animation id="zak" path="models/zak/zak"/>
+	</ModelAnimations>
+
+	<Fonts group="TestGroup">
+		<font name="Simple" family="Ubuntu-B" size="11" color="255;255;255;255" letterSpacing="0"/>
+  		<font name="ArialStroke" family="Ubuntu-B" size="24" color="255;255;255;255" letterSpacing="0">
+    	  <effect type="stroke" strokeTop = "1" strokeBottom = "1" strokeLeft = "1" strokeRight = "1" color = "255;0;0;0" alpha = "1" />
+  		</font>
+  		<font name="ArialGradient" family="Ubuntu-B" size="24" color="255;255;255;255" letterSpacing="0">
+    	  <effect type="gradient" anchors="6" ratios="[0,0.33,0.34,0.65,0.66,1]" colors="[4278255360,4278255360,4294901760,4294901760,4278190335,4278190335]" />
+  		</font>
+  		<font name="Comic" family="ComicSansMSRegular" size="12" color="255;255;255;255" letterSpacing="0" lineInterval="-5.0"/>
+        <font name="Ubuntu" family="Ubuntu-B" size="60" letterSpacing="0" color="#884A00">
+			<effect alpha="0.3" type="shadow" blurX="10" blurY="10" strength="3" angle="0" inner="false" color="0;0;0;255" offset="0"/>
+		</font>
+		<font name="HanSans" family="HanSansNormal" size="24" color="255;255;255;255" lineInterval="-3" />
+		<font name="System" family="System.Default" size="12" color="255;255;255;255" letterSpacing="0" />
+		<font name="Arabic" family="DejaVuSans" size="20" color="255;255;255;255" lineInterval="10" />
+		<font name="TestWithExtension" family="Ubuntu-Bold0" size="18" color="255;255;255;255" />
+		<fontExtension family="Ubuntu-Bold0" extension="Ubuntu-Bold1" />
+		<font name="TestWithoutExtension" family="Ubuntu-Bold0-Copy" size="18" color="255;255;255;255" />
+		<font name="NonFitTextFont" family="HanSansNormal" size="28" color="#8A5528" lineInterval="-2"></font>
+		<font name="ArialSoftShadow_10" family="Ubuntu-B" size="80" color="0;0;255;255" letterSpacing="0">
+			<effect type="soft_shadow" size = "8" angle="90" inner="false" power = "0.8" color = "255;255;255;0" alpha = "1" offset="0" />
+		</font>
+		<font name="ArialSoftShadow_4" family="Ubuntu-B" size="80" color="0;0;255;255" letterSpacing="0">
+			<effect type="soft_shadow" size = "8" angle="90" inner="false" power = "0.5" color = "255;255;255;0" alpha = "1" offset="0" />
+		</font>
+		<font name="ArialSoftShadow_8" family="Ubuntu-B" size="80" color="0;0;255;255" letterSpacing="0">
+			<effect type="soft_shadow" size = "8" angle="90" inner="false" power = "1.0" color = "255;255;255;0" alpha = "1" offset="0" />
+		</font>
+		<font name="ArialSoftShadow_small" family="Ubuntu-B" size="24" color="0;0;255;255" letterSpacing="0">
+			<effect type="soft_shadow" size = "2" angle="90" inner="false" power = "1.0" color = "255;255;255;0" alpha = "1" offset="0" />
+		</font>
+	</Fonts>
+
+	<Sounds group="TestGroup" basePath="sound">
+		<sample id="Frog" path="frog.ogg" mode="stream+cache" mix="1" volumeFactor="1.0"/>
+		<sample id="Pigeon" path="pigeon.ogg" mode="stream+cache" mix="1" volumeFactor="1.0"/>
+		<sample id="Seugull" path="seugull.ogg" mode="stream+cache" mix="1" volumeFactor="1.0"/>
+	</Sounds>
+
+
+	<Textures group="scrollers-gui"  basePath="textures/UI/Scrollers/">
+		<!-- Textures from GH -->
+
+		<!-- Textures group="scrollers-gui"  basePath="textures/UI/Journal/" -->
+		<texture id="Journal_IconShield" path="iconShield.png"/>
+		<texture id="Journal_IconSword" path="iconSword.png"/>
+		<texture id="Journal_IconThief" path="iconThief.png"/>
+
+		<!-- Textures group="gui"  basePath="textures/UI/Constructor" -->
+		<texture id="PAN_SeparatorH" path="panelSeparator.png"/>
+
+		<!-- Textures group="gui"  basePath="textures/UI/MainHUD" prescale="0.5" -->
+		<texture id="MainHUD_ShopCounterBg" path="bgCounter.png"/>
+
+		<!-- Textures group="gui"  basePath="textures/Social/Avatars" prescale="0.5" -->
+		<texture id="Avatar_1" path="ava1.png"/>
+		<texture id="Avatar_2" path="ava2.png"/>
+
+	</Textures>
+
+	<Textures group="scrollers-gui"  basePath="textures/UI/MainHUD/">
+		<!-- Textures group="UI_Main" basePath="textures/UI/MainScreen" -->
+		<sprite id="MainScreen_slot_active_1" path="slot_active_1.png" />
+		<sprite id="MainScreen_slot_active_2" path="slot_active_2.png" />
+		<sprite id="MainScreen_slot_active_3" path="slot_active_3.png" />
+		<sprite id="MainScreen_slot_active_4" path="slot_active_4.png" />
+		<sprite id="MainScreen_slot_active_5" path="slot_active_5.png" />
+		<sprite id="MainScreen_base_simple" path="base_simple.png" />
+		<sprite id="MainScreen_ico_clan" path="ico_clan.png" />
+		<sprite id="MainScreen_ico_life" path="ico_life.png" />
+		<sprite id="MainScreen_ico_shop" path="ico_shop.png" />
+		<sprite id="MainScreen_ico_home" path="ico_home.png" />
+		<sprite id="MainScreen_ico_medal" path="ico_medal.png" />
+		<sprite id="MainScreen_ico_separator" path="separator.png" />
+		<sprite id="MainScreen_ico_clan_active" path="ico_clan_active.png" />
+		<sprite id="MainScreen_ico_life_active" path="ico_life_active.png" />
+		<sprite id="MainScreen_ico_shop_active" path="ico_shop_active.png" />
+		<sprite id="MainScreen_ico_home_active" path="ico_home_active.png" />
+		<sprite id="MainScreen_ico_medal_active" path="ico_medal_active.png" />
+		<sprite id="UI_Top_Back" path="UI_Top_Back.png" />
+
+		<texture id="UI_Teams_panel" path="panel.png"/>
+		<texture id="UI_TeamChamge_btn_base_red" path="btn_base_red.png"/>
+		<texture id="UI_TeamChamge_btn_base_green" path="btn_base_green.png"/>
+		<sprite id="UI_Teams_btn_join" path="btn_join.png" />
+		<texture id="UI_Constructor_MainBackground" path="MainBackground.png" />
+
+		<sprite id="UI_LB_Players_FrameUserFB" path="FrameUserFB.png" />
+		<sprite id="UI_LB_Players_FrameUserFBGold" path="FrameUserFBGold.png" />
+		<sprite id="UI_LB_Players_FrameLogo" path="FrameLogo.png" />
+		<sprite id="UI_LB_Players_Stars" path="Stars.png" />
+		<sprite id="UI_LB_Players_NoneAva" path="NoneAva.png" />
+
+		<texture id="TeamLogo_Icon1" path="Icon1.png" />
+		<texture id="TeamLogo_Icon2" path="Icon2.png" />
+		<texture id="TeamLogo_Icon3" path="Icon3.png" />
+		<texture id="TeamLogo_Icon4" path="Icon4.png" />
+
+		<texture id="TeamLogo_Icon5" path="flags_big1.png" />
+		<texture id="TeamLogo_Icon6" path="flags_big2.png" />
+		<texture id="TeamLogo_Icon7" path="flags_big3.png" />
+		<texture id="TeamLogo_Icon8" path="flags_big4.png" />
+	</Textures>
+
+	<Textures group="Woman">
+		<texture id="woman_01.png" path="models/woman/woman_01.png" />
+		<texture id="blonde_01_tex.png" path="models/woman/blonde_01_tex.png" />
+		<texture id="granny_02.png" path="models/woman/granny_02.png" />
+		<texture id="ponytail_girl.png" path="models/woman/ponytail_girl.png" />
+	</Textures>
+
+	<ModelAnimations group="Woman">
+		<animation id="woman" path="models/woman/turist_woman"/>
+	</ModelAnimations>
+	
+	<Textures basePath="textures/matrix" group="matrix">
+		<texture id="MatrixBackground" path="background.png" />
+		<texture id="MorpheusChoise" path="morpheus_choise.png" />
+	</Textures>
+	
+	<Textures basePath="textures/ics_textures" group="ics">
+		<texture id="BackgroundStreet" path="background_street.png" />
+		<texture id="BackgroundStreetGrey" path="background_street_grey.png" />
+		<texture id="BackgroundNocturnally" path="background_nocturnally.png" />
+		<texture id="CharacterMain" path="character_main.png" />
+		<texture id="CharacterMainColored" path="character_main_colored.png" />
+		<texture id="Silhouette" path="silhouette.png" />
+		<texture id="Coffee" path="coffee.png" />
+		<texture id="BubbleBackground" path="comicsBubbleBackground.png" />
+		<texture id="BubbleTip" path="BubbleTip.png" />
+		<texture id="BubbleHeader" path="ComicsHeader.png" />
+		<texture id="BubbleSkip" path="btnScip.png" />
+		<texture id="Catherine" path="hs/default.png" />
+		<texture id="Catherine_amazed" path="hs/amaze.png" />
+		<texture id="Catherine_confused" path="hs/confused.png" />
+		<texture id="Catherine_happy" path="hs/happiness_1.png" />
+		<texture id="Catherine_surprised" path="hs/surprise.png" />
+		<texture id="Catherine_thinking" path="hs/think.png" />
+		<texture id="Boss" path="vso/avatar/boss.png" />
+		<texture id="Dandy" path="vso/avatar/dandy.png" />
+		<texture id="Handsome" path="vso/avatar/handsome.png" />
+		<texture id="Sailor" path="vso/avatar/sailor.png" />
+		<texture id="Seasoned" path="vso/avatar/seasoned.png" />
+		<texture id="Smart" path="vso/avatar/smart.png" />
+		<texture id="Cool" path="vso/avatar/cool.png" />
+		<texture id="Boss_full" path="vso/character/boss_full.png" />
+		<texture id="Dandy_full" path="vso/character/dandy_full.png" />
+		<texture id="Handsome_full" path="vso/character/handsome_full.png" />
+		<texture id="Sailor_full" path="vso/character/sailor_full.png" />
+		<texture id="Seasoned_full" path="vso/character/seasoned_full.png" />
+		<texture id="Smart_full" path="vso/character/smart_full.png" />
+		<texture id="Cool_full" path="vso/character/cool_full.png" />
+	</Textures>
+</Resources>

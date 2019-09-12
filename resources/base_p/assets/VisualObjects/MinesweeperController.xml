@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<asset assetType="sceneObject">
+	<!--vso: 22-->
+	<root name="root">
+		<uid entityId="1419989932" />
+		<transform />
+		<behaviours type="gameController">
+			<ptr field="MineField">
+				<uid entityId="3011879278" />
+			</ptr>
+		</behaviours>
+	</root>
+</asset>

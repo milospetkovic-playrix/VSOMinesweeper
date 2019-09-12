@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheme>
+    <import name="VsoupBasic" />
+
+    
+
+    <type name="ASGBubbleController_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="ASGBubbleController">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="ASGBubbleController" value="aSGBubbleController">
+    	<extends name="ASG::INodeRelativeStateAnimationController" />
+    	<field name="duration" type="Number" optional="true" />
+    	<field name="bubbleText" type="String" optional="true" />
+    </type>
+    
+    <type name="AssetDefence::Actor_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="AssetDefence::Actor">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="AssetDefence::Actor" value="actor">
+    	<extends name="GameObject" />
+    </type>
+    
+    <type name="AssetDefence::ActorCollisionHandler_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="AssetDefence::ActorCollisionHandler">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="AssetDefence::ActorCollisionHandler" value="actorCollisionHandler">
+    	<extends name="CollisionHandler" />
+    </type>
+    
+    <type name="actorData_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="actorData">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="actorData">
+    	<extends name="asset" />
+    	<field name="actorType" type="String" optional="true" />
+    	<link name="visual" type="VisualObject.asset" optional="true" />
+    	<link name="explosion" type="VisualObject.asset" optional="true" />
+    </type>
+    
+    <type name="AssetDefence::DefenceActor_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="AssetDefence::DefenceActor">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="AssetDefence::DefenceActor" value="defenceActor">
+    	<extends name="AssetDefence::Actor" />
+    </type>
+    
+    <type name="defenceActorData_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="defenceActorData">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="defenceActorData">
+    	<extends name="actorData" />
+    	<field name="health" type="Number" optional="true" />
+    	<field name="damage" type="Number" optional="true" />
+    	<field name="cooldown" type="Number" optional="true" />
+    </type>
+    
+    <type name="AssetDefence::Durability_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="AssetDefence::Durability">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="AssetDefence::Durability" value="durability">
+    	<extends name="Behaviour" />
+    	<field name="maxHealth" type="Number" optional="true" />
+    	<field name="currentHealth" type="Number" optional="true" />
+    </type>
+    
+    <type name="AssetDefence::EnemyActor_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="AssetDefence::EnemyActor">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="AssetDefence::EnemyActor" value="enemyActor">
+    	<extends name="AssetDefence::Actor" />
+    </type>
+    
+    <type name="enemyActorData_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="enemyActorData">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="enemyActorData">
+    	<extends name="actorData" />
+    	<field name="speed" type="Number" optional="true" />
+    	<field name="health" type="Number" optional="true" />
+    	<field name="damage" type="Number" optional="true" />
+    </type>
+    
+    <type name="AssetDefence::SpawnInfo">
+    	<field name="interval" type="Number" optional="true" />
+    	<child name="asset" type="AssetReference" optional="true" />
+    </type>
+    
+    <type name="AssetDefence::SpawnPoint_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="AssetDefence::SpawnPoint">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="AssetDefence::SpawnPoint" value="spawnPoint">
+    	<extends name="Behaviour" />
+    	<list name="spawns" type="AssetDefence::SpawnInfo" />
+    	<child name="spawnRange" type="Types.Vec2" optional="true" />
+    	<field name="isActive" type="Bool" optional="true" />
+    	<field name="intensity" type="Number" optional="true" />
+    </type>
+    
+    <type name="CombinedTextureBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="CombinedTextureBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="CombinedTextureBehaviour" value="combinedTexture">
+    	<extends name="Behaviour" />
+    	<field name="name" type="String" optional="true" />
+    	<link name="colorTexture" type="Resources.Texture" optional="true" />
+    	<link name="alphaTexture" type="Resources.Texture" optional="true" />
+    </type>
+    
+    <type name="ExecuteLUAOnButtonBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="ExecuteLUAOnButtonBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="ExecuteLUAOnButtonBehaviour" value="executeLUAOnButton">
+    	<extends name="Behaviour" />
+    	<field name="luaFunction" type="String" optional="true" />
+    	<list name="nodesToCall" type="VisualObjectEntityRef" />
+    </type>
+    
+    <type name="ExecuteLUAOnInitBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="ExecuteLUAOnInitBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="ExecuteLUAOnInitBehaviour" value="executeLUAOnInit">
+    	<extends name="Behaviour" />
+    	<field name="luaCode" type="String" optional="true" />
+    	<field name="luaCodeOnDeinit" type="String" optional="true" />
+    </type>
+    
+    <type name="Minesweeper::GameController_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="Minesweeper::GameController">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="Minesweeper::GameController" value="gameController">
+    	<extends name="Behaviour" />
+    	<field name="fieldSize" type="Number" optional="true" />
+    	<field name="gridSize" type="Int" optional="true" />
+    	<field name="mineCount" type="Int" optional="true" />
+    	<link name="field" type="VisualObject.asset" optional="true" />
+    </type>
+    
+    <type name="Minesweeper::MineFieldBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="Minesweeper::MineFieldBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="Minesweeper::MineFieldBehaviour" value="mineField">
+    	<extends name="Behaviour" />
+    	<child name="sprite" type="VisualObjectEntityRef" optional="true" />
+    </type>
+    
+    <type name="RefsBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="RefsBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="RefsBehaviour" value="refs">
+    	<extends name="Behaviour" />
+    	<list name="behaviours" type="VisualObjectEntityRef" />
+    	<list name="components" type="VisualObjectEntityRef" />
+    	<list name="nodes" type="VisualObjectEntityRef" />
+    	<field name="animate" type="Bool" optional="true" />
+    	<field name="amplitude" type="Number" optional="true" />
+    	<field name="speed" type="Number" optional="true" />
+    	<field name="rotateSpeed" type="Number" optional="true" />
+    	<field name="timeOffset" type="Number" optional="true" />
+    </type>
+    
+    <type name="RotatorGO_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="RotatorGO">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="RotatorGO" value="rotatorGO">
+    	<extends name="GameObject" />
+    	<field name="rotationSpeed" type="Number" optional="true" />
+    </type>
+    
+    <type name="TestPerformanceGO_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TestPerformanceGO">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TestPerformanceGO" value="testPerformanceGO">
+    	<extends name="GameObject" />
+    	<field name="initializationBehaviour" type="InitializationBehaviour" optional="true" />
+    	<field name="enableSortingOnSceneObject" type="Bool" optional="true" />
+    	<field name="enableSortingOnNodes" type="Bool" optional="true" />
+    	<field name="rows" type="Int" optional="true" />
+    	<field name="colums" type="Int" optional="true" />
+    	<child name="spawnRegion" type="Types.FRect" optional="true" />
+    	<field name="scale" type="Number" optional="true" />
+    </type>
+    
+    <type name="AnimCurveTestBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="AnimCurveTestBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="AnimCurveTestBehaviour" value="animCurveTest">
+    	<extends name="Behaviour" />
+    	<field name="speed" type="Number" optional="true" />
+    	<child name="position" type="AnimationCurveFPoint" optional="true" />
+    	<child name="rotation" type="AnimationCurveFloat" optional="true" />
+    </type>
+    
+    <type name="CircleCollider_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="CircleCollider">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="CircleCollider" value="circleCollider">
+    	<extends name="Collider" />
+    	<field name="radius" type="Number" optional="true" />
+    </type>
+    
+    <type name="ClockSampleBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="ClockSampleBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="ClockSampleBehaviour" value="clockSample">
+    	<extends name="Behaviour" />
+    	<child name="hourArrow" type="VisualObjectEntityRef" optional="true" />
+    	<child name="minuteArrow" type="VisualObjectEntityRef" optional="true" />
+    	<field name="hour" type="Int" optional="true" />
+    	<field name="minute" type="Int" optional="true" />
+    </type>
+    
+    <type name="Collider_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="Collider">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="Collider" value="collider">
+    	<extends name="Behaviour" />
+    	<field name="layer" type="String" optional="true" />
+    </type>
+    
+    <type name="CollisionHandler_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="CollisionHandler">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="CollisionHandler" value="collisionHandler">
+    	<extends name="Behaviour" />
+    </type>
+    
+    <type name="CollisionSettings_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="CollisionSettings">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="CollisionSettings" value="collisionSettings">
+    	<extends name="BaseSceneSettings" />
+    	<list name="layers" type="VsoTypes.StringItem" />
+    	<list name="mask" type="CollisionSettings::MaskItem" />
+    </type>
+    
+    <type name="CollisionSettings::MaskItem">
+    	<field name="layer1" type="String" optional="true" />
+    	<field name="layer2" type="String" optional="true" />
+    	<field name="collide" type="Bool" optional="true" />
+    </type>
+    
+    <type name="CollisionSolver_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="CollisionSolver">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="CollisionSolver" value="collisionSolver">
+    	<extends name="Behaviour" />
+    </type>
+    
+    <type name="CombinedTextureComponent_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="CombinedTextureComponent">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="CombinedTextureComponent" value="combinedTexture">
+    	<extends name="MaterialComponent" />
+    	<child name="color" type="Types.Colour" optional="true" />
+    	<field name="id" type="String" optional="true" />
+    </type>
+    
+    <type name="ConditionTestBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="ConditionTestBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="ConditionTestBehaviour" value="conditionTest">
+    	<extends name="Behaviour" />
+    	<child name="testCondition" type="Game::Conditions::Condition" optional="true" />
+    	<child name="context" type="AssetReference" optional="true" />
+    	<field name="contextVarName" type="String" optional="true" />
+    </type>
+    
+    <type name="DebugBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="DebugBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="DebugBehaviour" value="debug">
+    	<extends name="Behaviour" />
+    	<child name="node" type="VisualObjectEntityRef" optional="true" />
+    	<field name="logUpdate" type="Bool" optional="true" />
+    </type>
+    
+    <type name="FlightControllerTestBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="FlightControllerTestBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="FlightControllerTestBehaviour" value="flightControllerTest">
+    	<extends name="Behaviour" />
+    	<link name="objectId" type="VisualObject.asset" optional="true" />
+    	<list name="locatorNames" type="VsoTypes.StringItem" />
+    	<child name="startNode" type="VisualObjectEntityRef" optional="true" />
+    	<field name="launchInterval" type="Number" optional="true" />
+    </type>
+    
+    <type name="LabelTextBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="LabelTextBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="LabelTextBehaviour" value="labelText">
+    	<extends name="Behaviour" />
+    	<child name="label" type="VisualObjectEntityRef" optional="true" />
+    	<field name="text" type="String" optional="true" />
+    </type>
+    
+    <type name="ObjectLauncherBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="ObjectLauncherBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="ObjectLauncherBehaviour" value="objectLauncher">
+    	<extends name="Behaviour" />
+    	<child name="startPos" type="VisualObjectEntityRef" optional="true" />
+    	<child name="endPos" type="VisualObjectEntityRef" optional="true" />
+    	<field name="verticalOffset" type="Number" optional="true" />
+    	<field name="speed" type="Number" optional="true" />
+    	<field name="launch" type="Bool" optional="true" />
+    </type>
+    
+    <type name="ReadOnlySampleBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="ReadOnlySampleBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="ReadOnlySampleBehaviour" value="readOnlySample">
+    	<extends name="Behaviour" />
+    	<field name="testInt3" type="Int" optional="true" />
+    	<list name="testVector" type="Types.Vec2" />
+    	<list name="ints" type="VsoTypes.IntItem" />
+    	<child name="testStructWritable" type="TestStruct" optional="true" />
+    	<field name="testInt2" type="Int" optional="true" />
+    </type>
+    
+    <type name="RetranslateEditboxToLabelBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="RetranslateEditboxToLabelBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="RetranslateEditboxToLabelBehaviour" value="retranslateEditboxToLabel">
+    	<extends name="Behaviour" />
+    	<child name="editBox" type="VisualObjectEntityRef" optional="true" />
+    	<child name="labelForNewText" type="VisualObjectEntityRef" optional="true" />
+    	<child name="labelForOldText" type="VisualObjectEntityRef" optional="true" />
+    </type>
+    
+    <type name="SpriteIdBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="SpriteIdBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="SpriteIdBehaviour" value="spriteId">
+    	<extends name="Behaviour" />
+    	<child name="sprite" type="VisualObjectEntityRef" optional="true" />
+    	<link name="id" type="VisualObject.TextureOrSpriteType" optional="true" />
+    </type>
+    
+    <type name="Test::AnimationCurvesClass">
+    	<child name="floatCurve" type="AnimationCurveFloat" optional="true" />
+    	<child name="pointCurve" type="AnimationCurveFPoint" optional="true" />
+    </type>
+    
+    <type name="Test::AssetsClass">
+    	<link name="texture" type="Resources.Texture" optional="true" />
+    	<link name="sprite" type="Resources.Sprite" optional="true" />
+    	<link name="spriteOrTexture" type="VisualObject.TextureOrSpriteType" optional="true" />
+    	<link name="textureOrTarget" type="Resources.Texture" optional="true" />
+    	<field name="renderTarget" type="String" optional="true" />
+    	<field name="flash" type="String" optional="true" />
+    	<link name="particle" type="Effect.Effect" optional="true" />
+    	<link name="model" type="Resources.ModelAnimation" optional="true" />
+    	<link name="spine" type="Resources.SpineAnimation" optional="true" />
+    	<link name="audio" type="Resources.SoundSample" optional="true" />
+    	<link name="shader" type="Resources.Shader" optional="true" />
+    	<field name="shaderWithAdvanced" type="String" optional="true" />
+    	<link name="font" type="Resources.Font" optional="true" />
+    	<field name="fontFile" type="String" optional="true" />
+    	<link name="animation" type="Animation.asset" optional="true" />
+    	<link name="object" type="VisualObject.asset" optional="true" />
+    	<field name="geometry" type="String" optional="true" />
+    	<field name="graph" type="String" optional="true" />
+    	<child name="gdbRef" type="AssetReference" optional="true" />
+    </type>
+    
+    <type name="Test::BasicPropertiesClass">
+    	<field name="int" type="Int" optional="true" />
+    	<field name="float" type="Number" optional="true" />
+    	<field name="string" type="String" optional="true" />
+    	<field name="bool" type="Bool" optional="true" />
+    	<child name="color" type="Types.Colour" optional="true" />
+    	<child name="floatPoint" type="Types.Vec2" optional="true" />
+    	<child name="intPoint" type="VsoTypes.IntVec2" optional="true" />
+    	<child name="floatRect" type="Types.FRect" optional="true" />
+    	<child name="intRect" type="VsoTypes.IRect" optional="true" />
+    	<child name="vector3" type="Types.Vec3" optional="true" />
+    	<field name="enum" type="BasicEnum" optional="true" />
+    	<field name="flags" type="BasicEnumFlags" optional="true" />
+    </type>
+    
+    <type name="Test::Class0_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="Test::Class0">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="Test::Class0" value="class0">
+    	<field name="class0Field" type="Int" optional="true" />
+    </type>
+    
+    <type name="Test::ClassA_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="Test::ClassA">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="Test::ClassA" value="classA">
+    	<extends name="Test::Class0" />
+    	<field name="classAField" type="Int" optional="true" />
+    </type>
+    
+    <type name="Test::ClassB_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="Test::ClassB">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="Test::ClassB" value="classB">
+    	<extends name="Test::Class0" />
+    	<field name="classBField" type="Int" optional="true" />
+    </type>
+    
+    <type name="Test::ClassXA_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="Test::ClassXA">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="Test::ClassXA" value="classXA">
+    	<extends name="Test::ClassA" />
+    	<field name="classXAField" type="Int" optional="true" />
+    </type>
+    
+    <type name="Test::ClassYA_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="Test::ClassYA">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="Test::ClassYA" value="classYA">
+    	<extends name="Test::ClassA" />
+    	<field name="classYAField" type="Int" optional="true" />
+    </type>
+    
+    <type name="Test::CollectionsClass_mapString2Int_pair">
+    	<field name="first" type="String" optional="true" />
+    	<field name="second" type="Int" optional="true" />
+    </type>
+    
+    <type name="Test::CollectionsClass_mapInt2Vector3_pair">
+    	<field name="first" type="Int" optional="true" />
+    	<child name="second" type="Types.Vec3" optional="true" />
+    </type>
+    
+    <type name="Test::CollectionsClass_mapString2Class_pair">
+    	<field name="first" type="String" optional="true" />
+    	<child name="second" type="Test::BasicPropertiesClass" optional="true" />
+    </type>
+    
+    <type name="Test::CollectionsClass_vectorOfVectorsOfInts_list">
+    	<list name="vectorOfVectorsOfInts" type="VsoTypes.IntItem" />
+    </type>
+    
+    <type name="Test::CollectionsClass_vectorOfVectorsOfVector3_list">
+    	<list name="vectorOfVectorsOfVector3" type="Types.Vec3" />
+    </type>
+    
+    <type name="Test::CollectionsClass_vectorOfVectorsOfClass_list">
+    	<list name="vectorOfVectorsOfClass" type="Test::BasicPropertiesClass" />
+    </type>
+    
+    <type name="Test::CollectionsClass_mapStringToMapsInt2String_pair_second_pair">
+    	<field name="first" type="Int" optional="true" />
+    	<field name="second" type="String" optional="true" />
+    </type>
+    
+    <type name="Test::CollectionsClass_mapStringToMapsInt2String_pair">
+    	<field name="first" type="String" optional="true" />
+    	<list name="second" type="Test::CollectionsClass_mapStringToMapsInt2String_pair_second_pair" />
+    </type>
+    
+    <type name="Test::CollectionsClass">
+    	<list name="vectorOfInts" type="VsoTypes.IntItem" />
+    	<list name="vectorOfVector3" type="Types.Vec3" />
+    	<list name="vectorOfClass" type="Test::BasicPropertiesClass" />
+    	<list name="mapString2Int" type="Test::CollectionsClass_mapString2Int_pair" />
+    	<list name="mapInt2Vector3" type="Test::CollectionsClass_mapInt2Vector3_pair" />
+    	<list name="mapString2Class" type="Test::CollectionsClass_mapString2Class_pair" />
+    	<list name="vectorOfVectorsOfInts" type="Test::CollectionsClass_vectorOfVectorsOfInts_list" />
+    	<list name="vectorOfVectorsOfVector3" type="Test::CollectionsClass_vectorOfVectorsOfVector3_list" />
+    	<list name="vectorOfVectorsOfClass" type="Test::CollectionsClass_vectorOfVectorsOfClass_list" />
+    	<list name="mapStringToMapsInt2String" type="Test::CollectionsClass_mapStringToMapsInt2String_pair" />
+    </type>
+    
+    <type name="Test::OptionalClass">
+    	<field name="int" type="Int" optional="true" />
+    	<field name="float" type="Number" optional="true" />
+    	<field name="string" type="String" optional="true" />
+    	<field name="bool" type="Bool" optional="true" />
+    	<child name="color" type="Types.Colour" optional="true" />
+    	<child name="floatPoint" type="Types.Vec2" optional="true" />
+    	<child name="intPoint" type="VsoTypes.IntVec2" optional="true" />
+    	<child name="floatRect" type="Types.FRect" optional="true" />
+    	<child name="intRect" type="VsoTypes.IRect" optional="true" />
+    	<child name="vector3" type="Types.Vec3" optional="true" />
+    	<field name="enum" type="BasicEnum" optional="true" />
+    	<field name="flags" type="BasicEnumFlags" optional="true" />
+    	<child name="class" type="Test::BasicPropertiesClass" optional="true" />
+    </type>
+    
+    <type name="Test::PointerClass_mapOfPointersToBasicClass_pair">
+    	<field name="first" type="Int" optional="true" />
+    	<child name="second" type="Test::Class0_Ptr" optional="true" />
+    </type>
+    
+    <type name="Test::PointerClass_mapOfPointersIntoMiddleOfHierarchy_pair">
+    	<field name="first" type="Int" optional="true" />
+    	<child name="second" type="Test::ClassA_Ptr" optional="true" />
+    </type>
+    
+    <type name="Test::PointerClass">
+    	<child name="simplePointerToBasicClass" type="Test::Class0_Ptr" optional="true" />
+    	<child name="simplePointerIntoMiddleOfHierarchy" type="Test::ClassA_Ptr" optional="true" />
+    	<list name="vectorOfPointersToBasicClass" type="Test::Class0_Ptr" />
+    	<list name="vectorOfPointersIntoMiddleOfHierarchy" type="Test::ClassA_Ptr" />
+    	<list name="mapOfPointersToBasicClass" type="Test::PointerClass_mapOfPointersToBasicClass_pair" />
+    	<list name="mapOfPointersIntoMiddleOfHierarchy" type="Test::PointerClass_mapOfPointersIntoMiddleOfHierarchy_pair" />
+    </type>
+    
+    <type name="Test::ReadOnlyPropertiesClass">
+    </type>
+    
+    <type name="Test::RefrenceClass_mapOfNodeRefs_pair">
+    	<field name="first" type="Int" optional="true" />
+    	<child name="second" type="VisualObjectEntityRef" optional="true" />
+    </type>
+    
+    <type name="Test::RefrenceClass_mapOfBehaviourRefs_pair">
+    	<field name="first" type="Int" optional="true" />
+    	<child name="second" type="VisualObjectEntityRef" optional="true" />
+    </type>
+    
+    <type name="Test::RefrenceClass">
+    	<child name="node" type="VisualObjectEntityRef" optional="true" />
+    	<child name="component" type="VisualObjectEntityRef" optional="true" />
+    	<child name="sorting" type="VisualObjectEntityRef" optional="true" />
+    	<child name="behaviour" type="VisualObjectEntityRef" optional="true" />
+    	<child name="materialComponent" type="VisualObjectEntityRef" optional="true" />
+    	<list name="vectorOfNodeRefs" type="VisualObjectEntityRef" />
+    	<list name="vectorOfBehaviourRefs" type="VisualObjectEntityRef" />
+    	<list name="mapOfNodeRefs" type="Test::RefrenceClass_mapOfNodeRefs_pair" />
+    	<list name="mapOfBehaviourRefs" type="Test::RefrenceClass_mapOfBehaviourRefs_pair" />
+    </type>
+    
+    <type name="Test::SetterGetterClass">
+    	<field name="someValue" type="Int" optional="true" />
+    	<field name="anotherValue" type="Int" optional="true" />
+    	<field name="fakeValue" type="Int" optional="true" />
+    	<field name="AnotherFakeValue" type="Int" optional="true" />
+    	<child name="Class" type="Test::BasicPropertiesClass" optional="true" />
+    </type>
+    
+    <type name="Test::TestInspectorBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="Test::TestInspectorBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="Test::TestInspectorBehaviour" value="testInspector">
+    	<extends name="Behaviour" />
+    	<child name="basicProperties" type="Test::BasicPropertiesClass" optional="true" />
+    	<child name="optionalProperties" type="Test::OptionalClass" optional="true" />
+    	<child name="collections" type="Test::CollectionsClass" optional="true" />
+    	<child name="readonlyProperties" type="Test::ReadOnlyPropertiesClass" optional="true" />
+    	<child name="settersGetters" type="Test::SetterGetterClass" optional="true" />
+    	<child name="refrences" type="Test::RefrenceClass" optional="true" />
+    	<child name="assets" type="Test::AssetsClass" optional="true" />
+    	<child name="pointers" type="Test::PointerClass" optional="true" />
+    	<child name="curves" type="Test::AnimationCurvesClass" optional="true" />
+    </type>
+    
+    <type name="TestASGMovementBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TestASGMovementBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TestASGMovementBehaviour" value="testASGMovement">
+    	<extends name="ASG::MovementBehaviour" />
+    	<field name="cellWidth" type="Number" optional="true" />
+    	<field name="cellAspect" type="Number" optional="true" />
+    </type>
+    
+    <type name="TestASGVariablesBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TestASGVariablesBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TestASGVariablesBehaviour" value="testASGVariables">
+    	<extends name="Behaviour" />
+    	<field name="stringVar" type="String" optional="true" />
+    	<field name="floatVar" type="Number" optional="true" />
+    	<field name="intVar" type="Int" optional="true" />
+    	<field name="boolVar" type="Bool" optional="true" />
+    	<child name="pointVar" type="Types.Vec2" optional="true" />
+    </type>
+    
+    <type name="TestColorBehAnimateBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TestColorBehAnimateBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TestColorBehAnimateBehaviour" value="testColorBehAnimate">
+    	<extends name="Behaviour" />
+    	<child name="color1" type="Types.Colour" optional="true" />
+    	<child name="color2" type="Types.Colour" optional="true" />
+    </type>
+    
+    <type name="TestLogBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TestLogBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TestLogBehaviour" value="testLog">
+    	<extends name="Behaviour" />
+    	<field name="message" type="String" optional="true" />
+    	<child name="editBox" type="VisualObjectEntityRef" optional="true" />
+    </type>
+    
+    <type name="TestRequireBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TestRequireBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TestRequireBehaviour" value="testRequire">
+    	<extends name="Behaviour" />
+    </type>
+    
+    <type name="TestReverseAnimationBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TestReverseAnimationBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TestReverseAnimationBehaviour" value="testReverseAnimation">
+    	<extends name="Behaviour" />
+    	<link name="forthAnimation" type="Animation.asset" optional="true" />
+    	<link name="backAnimation" type="Animation.asset" optional="true" />
+    	<field name="reverse" type="Bool" optional="true" />
+    </type>
+    
+    <type name="TestSceneConstructBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TestSceneConstructBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TestSceneConstructBehaviour" value="testSceneConstruct">
+    	<extends name="Behaviour" />
+    	<list name="spritesId" type="TestSceneConstructBehaviour::StringId" />
+    	<child name="spawnNodesRoot" type="VisualObjectEntityRef" optional="true" />
+    	<field name="rows" type="Int" optional="true" />
+    	<field name="colums" type="Int" optional="true" />
+    	<child name="spawnRegion" type="Types.FRect" optional="true" />
+    	<field name="scale" type="Number" optional="true" />
+    	<field name="spawnNodes" type="Bool" optional="true" />
+    	<field name="spawnVisualobjects" type="Bool" optional="true" />
+    </type>
+    
+    <type name="TestSceneConstructBehaviour::StringId">
+    	<link name="id" type="VisualObject.asset" optional="true" />
+    </type>
+    
+    <type name="TestStruct">
+    	<field name="testFloatx" type="Number" optional="true" />
+    	<field name="testIntx" type="Int" optional="true" />
+    </type>
+    
+    <type name="TestSubscriptionBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TestSubscriptionBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TestSubscriptionBehaviour" value="testSubscription">
+    	<extends name="Behaviour" />
+    	<child name="nodeRef" type="VisualObjectEntityRef" optional="true" />
+    	<link name="objectId" type="VisualObject.asset" optional="true" />
+    	<child name="position" type="Types.Vec2" optional="true" />
+    </type>
+    
+    <type name="TextNumberIncrementBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="TextNumberIncrementBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="TextNumberIncrementBehaviour" value="textNumberIncrement">
+    	<extends name="Behaviour" />
+    	<child name="labelRef" type="VisualObjectEntityRef" optional="true" />
+    </type>
+    
+    <type name="U3SliceBehaviour_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="U3SliceBehaviour">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="U3SliceBehaviour" value="u3Slice">
+    	<extends name="Behaviour" />
+    	<field name="uSpaceSize" type="Number" optional="true" />
+    	<field name="uLeftSlice" type="Number" optional="true" />
+    	<field name="uRightSlice" type="Number" optional="true" />
+    	<field name="uRectStart" type="Number" optional="true" />
+    	<field name="uRectEnd" type="Number" optional="true" />
+    </type>
+    
+    <type name="VsoupSceneSettings_Ptr">
+    	<field name="type" type="String" />
+    	<child name="ptr" type="VsoupSceneSettings">
+    		<switch name="type" />
+    	</child>
+    </type>
+    
+    <type name="VsoupSceneSettings" value="vsoupSceneSettings">
+    	<extends name="BaseSceneSettings" />
+    	<child name="backgroundColor" type="Types.Colour" optional="true" />
+    </type>
+    
+    <enum name="BasicEnum" >
+    	<value name="Zero" />
+    	<value name="One" />
+    	<value name="Two" />
+    	<value name="Three" />
+    	<value name="Four" />
+    </enum>
+    
+    <enum name="BasicEnumFlags" >
+    	<value name="Zero" />
+    	<value name="One" />
+    	<value name="Two" />
+    	<value name="Three" />
+    	<value name="Four" />
+    </enum>
+    
+    <enum name="InitializationBehaviour" >
+    	<value name="None" />
+    	<value name="CreateNodes" />
+    	<value name="CreateObjects" />
+    </enum>
+    
+    <enum name="TimeAveragingType" >
+    	<value name="Average" />
+    	<value name="Median" />
+    </enum>
+    
+    
+</scheme>
